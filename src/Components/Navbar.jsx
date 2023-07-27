@@ -15,7 +15,7 @@ export default function newNavbar() {
         <>
             <Navbar sticky='top' bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand as={Link} to='/'>Dashboard</Navbar.Brand>                
+                    <Navbar.Brand as={Link} to='/'>Settle the Score</Navbar.Brand>                
                     <Nav className="me-auto">
                             <Nav.Link as={Link} to='/leagues'>Leagues</Nav.Link>
                             <Nav.Link as={Link} to='/games'>Games</Nav.Link>
