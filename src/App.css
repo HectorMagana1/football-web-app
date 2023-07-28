@@ -1,0 +1,13 @@
+#card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width:300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 30px auto;
+}
+.card-input{
+    width:200px;
+}

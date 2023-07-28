@@ -3,7 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Dashboard from '../Pages/Dashboard';
+// import Dashboard from '../Pages/Dashboard';
+import DashboardV2 from '../Pages/DashboardV2.0';
 import { Link, Routes, Route } from 'react-router-dom';
 import Leagues from '../Pages/Leagues';
 import Games from '../Pages/Games';
@@ -25,7 +26,7 @@ export default function newNavbar() {
             </Navbar>
             <div>
                 <Routes>
-                    <Route path='/' element={<Dashboard />} />
+                    <Route path='/' element={<DashboardV2 />} />
                     <Route path='/leagues' element={<Leagues />} />
                     <Route path='/games' element={<Games />} />
                     <Route path='/log-in' element={<Login />} />

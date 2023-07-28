@@ -1,14 +1,17 @@
-import { Card, Col, Container, Form, Row } from "react-bootstrap"
-import ComparedCard from "../Components/Comparedcard"
-import { useEffect, useState } from "react"
+// import { Card, Col, Container, Form, Row } from "react-bootstrap"
+// import ComparedCard from "../Components/Comparedcard"
+// import { useEffect, useState } from "react"
+// import { data } from "../data";
 
-export default function Dashboard() {
+// export default function Dashboard() {
 
-    const [selectVal,setSelectVal] = useState('');
+    // const [selectVal,setSelectVal] = useState('');
 
-    function handleSelect(event){
-        setSelectVal(event.target.value);
-    }
+    // function handleSelect(event){
+    //     setSelectVal(event.target.value);
+    // }
+
+    // console.log(data);
 
 //  const url = 'https://api-football-v1.p.rapidapi.com/v3/players?id=276&season=2020';
 //  const options = {
@@ -33,31 +36,31 @@ export default function Dashboard() {
     //     console.log(selectVal)
     // ),[selectVal])
 
-  return (
-    <Container>
-        <Row>
-            <Col md={{span:4 , offset:4}}>
-                <Form.Select onChange={handleSelect} size='sm' aria-label="Default select example">
-                    <option value={null}>Compare...</option>
-                    <option value="team">Compare Team</option>
-                    <option value="players">Compare Player</option>
-                </Form.Select>
-            </Col>
-        </Row>
-        <Row>
-            <Col>
-                <ComparedCard player={null} />
-            </Col>
-            <Col>
-                <ComparedCard player={null} />
-            </Col>
-        </Row>
-    </Container>
+//   return (
+//     <Container>
+//         <Row>
+//             <Col md={{span:4 , offset:4}}>
+//                 <Form.Select onChange={handleSelect} size='sm' aria-label="Default select example">
+//                     <option value={null}>Compare...</option>
+//                     <option value="team">Compare Team</option>
+//                     <option value="players">Compare Player</option>
+//                 </Form.Select>
+//             </Col>
+//         </Row>
+//         <Row>
+//             <Col>
+//                 <ComparedCard player={null} />
+//             </Col>
+//             <Col>
+//                 <ComparedCard player={null} />
+//             </Col>
+//         </Row>
+//     </Container>
 
     
-  )
-}
+//   )
+// }
 
 
-'https://api-football-v1.p.rapidapi.com/v3/players'
-'https://api-football-v1.p.rapidapi.com/v3/teams/statistics'
+// 'https://api-football-v1.p.rapidapi.com/v3/players'
+// 'https://api-football-v1.p.rapidapi.com/v3/teams/statistics'
