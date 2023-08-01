@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export default function SearchBar({ setResults }) {
-
-    const [input, setInput] = useState('');
-
-    // function handleChange(event){
-    //     setInput(event.target.value);
-    // }
+export default function SearchBar({ setResults,setInput,input }) {
 
     async function searchPlayer(event){
         setInput(event.target.value)

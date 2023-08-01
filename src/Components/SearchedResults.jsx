@@ -1,14 +1,24 @@
-export default function SearchedResults({ results }) {
-  // console.log(results);
+import { useState } from "react";
+import PlayerCard from "./PlayerCard";
+
+export default function SearchedResults({ results,setPlayerId,setInput,setResults}) {
+
   let data = results.data
-  // console.log(data);
+
+  function clickPlayer(event){
+    setPlayerId(event.target.id);
+    setResults([]);
+    setInput('');
+  }
+
+
   return (
     <div>
       {data.map((player)=>{
         return(
-          <div key={player.id}>
-            <h1>{player.first_name} {player.last_name}</h1>
-          </div>
+            <div onClick={clickPlayer} key={player.id}>
+              <h1 id={player.id}>{player.first_name} {player.last_name}</h1>
+            </div>
         )
       })}
     </div>
