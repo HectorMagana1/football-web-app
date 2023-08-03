@@ -1,7 +1,8 @@
-export default function SearchBar({ season,setResults,setInput,input,playerId }) {
+export default function SearchBar({ setResults,setInput,input,setPlayerId }) {
 
 
     async function searchPlayer(event){
+        // setPlayerId(null)
         setInput(event.target.value)
         let url = `https://www.balldontlie.io/api/v1/players?search=${input}`
         const response = await fetch(url);
@@ -9,17 +10,9 @@ export default function SearchBar({ season,setResults,setInput,input,playerId })
         setResults(searchedResult);
     }
 
-    // async function handleClick(){
-    //   let url = `https://www.balldontlie.io/api/v1/season_averages?season=${season}&player_ids[]=${playerId}`
-    //   const response = await fetch(url)
-    //   const result = await response.json()
-    //   console.log(result)
-    // }
-
   return (
     <div>
       <input type="text" placeholder='Search player' value={input} onChange={searchPlayer}/>
-      {/* <button onClick={handleClick}>data</button> */}
     </div>
   )
 }
