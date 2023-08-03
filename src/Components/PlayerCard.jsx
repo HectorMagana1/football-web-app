@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from 'react'
 
-export default function PlayerCard({ id,data,setData }) {
+export default function PlayerCard({ id,season }) {
 
+    const [player,setPlayer] = useState([]);
+    console.log(id);
+    console.log(season);
 
     async function getPlayerInfo(){
-        let url = `https://www.balldontlie.io/api/v1/players/${id}`;
-        let response = await fetch(url);
-        let playerData = await response.json();
-        setData(playerData);
+        let url = `https://www.balldontlie.io/api/v1/season_averages?season=${season}&player_ids[]=${id}`
+        const response = await fetch(url)
+        const result = await response.json()
+        setPlayer(result)
     }
 
     useEffect(()=>{
         getPlayerInfo()
     },[])
 
+    console.log(player.data[0]);
+
 return (
     <div>
-        <h1>{data.first_name}</h1>
-        <h2>{data.last_name}</h2>
-        <h2>{data.height_feet}</h2>
-        <h2>{data.height_inches}</h2>
-        <h3>team</h3>
+        <h1>{player.data[0].pts}</h1>
     </div>
   )
 }

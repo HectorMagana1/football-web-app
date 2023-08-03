@@ -1,6 +1,3 @@
-import { useState } from "react";
-import PlayerCard from "./PlayerCard";
-
 export default function SearchedResults({ results,setPlayerId,setInput,setResults}) {
 
   let data = results.data
@@ -10,6 +7,7 @@ export default function SearchedResults({ results,setPlayerId,setInput,setResult
     setResults([]);
     setInput('');
   }
+
 
 
   return (
