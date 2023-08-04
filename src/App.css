@@ -1,3 +1,15 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+.navbar{
+    width:100vw;
+    height: 120px;
+    background-image:linear-gradient(to bottom,rgb(208, 206, 206), rgb(241, 241, 241));
+}
+.navbar-text{
+    font-size:40px;
+
+}
 #main-container{
     width:100vw;
     height:100vh;
@@ -9,10 +21,67 @@
 #player-card-container{
     width:100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #results-container{
     max-height: 200px;
     overflow-y: auto;
+    background-color:rgb(255, 255, 255);
+    outline: 1px solid gray;
+}
+
+.info{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    outline: 1px solid gray;
+}
+
+#player1-card-container{
+    margin-top: 30px;
+}
+img{
+    width: 60px;
+}
+#select{
+    width:400px;
+}
+input{
+    width:400px;
+}
+#player-card{
+    width:400px;
+    background-image:linear-gradient(to bottom,rgb(208, 206, 206), rgb(241, 241, 241));
+}
+#team{
+    font-size:25px;
+    color:gray;
+    margin-top:5px;
+}
+.player{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    color:rgb(95, 95, 95);
+    font-size:30px;
+}
+#about-page{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 100px;
+    font-size: 30px;
+}
+div#about-page div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width:700px;
+    height:500px;
+    background-image: linear-gradient(to bottom,rgb(125, 125, 125),rgb(230, 230, 230));
+    padding: 50px;
+    border-radius: 20px;
 }

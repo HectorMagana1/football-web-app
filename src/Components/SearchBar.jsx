@@ -2,7 +2,7 @@ export default function SearchBar({ setResults,setInput,input,setPlayerId }) {
 
 
     async function searchPlayer(event){
-        // setPlayerId(null)
+        setPlayerId(null)
         setInput(event.target.value)
         let url = `https://www.balldontlie.io/api/v1/players?search=${input}`
         const response = await fetch(url);

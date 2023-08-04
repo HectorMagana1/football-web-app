@@ -9,7 +9,7 @@ export default function Select({ setSeason }) {
 
   return (
     <div id='select-container'>
-            <Form.Select onChange={handleChange} aria-label='Default select'>
+            <Form.Select id='select' onChange={handleChange} aria-label='Default select'>
                 <option value=''>Select season...</option>
                 <option value='2022'>2022-2023</option>
                 <option value='2021'>2021-2022</option>

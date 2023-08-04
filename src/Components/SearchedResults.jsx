@@ -14,7 +14,7 @@ export default function SearchedResults({ results,setPlayerId,setInput,setResult
         return(
             <div className='player' onClick={clickPlayer} key={player.id}>
               <h1 id={player.id}>{player.first_name} {player.last_name}</h1>
-              <h3>{player.team.abbreviation}</h3>
+              <h3 id='team'>{player.team.abbreviation}</h3>
             </div>
         )
       })}
