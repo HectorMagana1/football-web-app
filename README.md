@@ -17,6 +17,15 @@ Settle the Score relies on the following API for basketball player statistics:
 
 - **Ball Don't Lie API:** This API provides comprehensive basketball data, including player statistics, team information, game results, and more. It serves as a reliable source of up-to-date information for our app.
 
+## Deployment
+
+The Settle the Score app is deployed and accessible online. You can visit the app at the following URL:
+
+**https://main--transcendent-licorice-faf2dc.netlify.app/**
+
+Feel free to explore the app and enjoy comparing basketball player statistics with ease!
+
+
 ## How to Use
 
 1. **Installation:**
@@ -29,7 +38,7 @@ Settle the Score relies on the following API for basketball player statistics:
    - The app will be available at `http://localhost:3000`.
 
 3. **Player Comparison:**
-   - On the Settle the Score homepage, you will find two drop down menus to select the season and two search bar where you can enter the names of the basketball players you want to compare.
+   - On the Settle the Score homepage, you will find two drop down menus to select the season and two search bar where you can enter the names of the basketball players       you want to compare.
    - As you type, the app will display a list of matching players from the database.
    - Select the players you want to compare from the list, and the app will generate a side-by-side comparison of their statistics.
 
@@ -50,6 +59,3 @@ We welcome contributions from the community to improve Settle the Score. If you 
 We value your feedback! If you have any questions, comments, or suggestions, please don't hesitate to reach out to us through the contact information provided in the app or our GitHub repository.
 
 Thank you for using Settle the Score and happy basketball stat comparing! 🏀
-
-
-
