@@ -1,10 +1,10 @@
 # Settle the Score - Basketball Player Statistics Comparison App
 
-Welcome to Settle the Score! This app is designed to provide basketball fans, analysts, and enthusiasts with a powerful tool to compare and analyze the statistics of their favorite players. With a user-friendly interface and interactive visualizations, HoopStats allows you to gain valuable insights into the performance of basketball players from different leagues and seasons.
+Welcome to Settle the Score! This app is designed to provide basketball fans, analysts, and enthusiasts with a powerful tool to compare and analyze the statistics of their favorite players. With a user-friendly interface and interactive visualizations, Settle the Score allows you to gain valuable insights into the performance of basketball players from different leagues and seasons.
 
 ## Technologies Used
 
-HoopStats was developed using the following technologies:
+Settle the Score was developed using the following technologies:
 
 - **JavaScript:** The core programming language used to build the app's logic and functionality.
 - **HTML:** The markup language used to structure the app's user interface.
@@ -13,7 +13,7 @@ HoopStats was developed using the following technologies:
 
 ## APIs Used
 
-HoopStats relies on the following API for basketball player statistics:
+Settle the Score relies on the following API for basketball player statistics:
 
 - **Ball Don't Lie API:** This API provides comprehensive basketball data, including player statistics, team information, game results, and more. It serves as a reliable source of up-to-date information for our app.
 
