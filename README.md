@@ -11,6 +11,12 @@ HoopStats was developed using the following technologies:
 - **CSS:** The styling language used to enhance the visual appeal and layout of the app.
 - **React JS:** A popular JavaScript library used for building interactive user interfaces.
 
+## APIs Used
+
+HoopStats relies on the following API for basketball player statistics:
+
+- **Ball Don't Lie API:** This API provides comprehensive basketball data, including player statistics, team information, game results, and more. It serves as a reliable source of up-to-date information for our app.
+
 ## How to Use
 
 1. **Installation:**
@@ -44,3 +50,6 @@ We welcome contributions from the community to improve Settle the Score. If you 
 We value your feedback! If you have any questions, comments, or suggestions, please don't hesitate to reach out to us through the contact information provided in the app or our GitHub repository.
 
 Thank you for using Settle the Score and happy basketball stat comparing! 🏀
+
+
+
